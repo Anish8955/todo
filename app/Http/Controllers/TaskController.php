@@ -58,7 +58,7 @@ class TaskController extends Controller
    public function destroy($id){
      $Task=Task::findOrFail($id);
      
-     $Task->delete();
+     $Task->delete();   
 
      return redirect()->back()->with('success', 'Task deleted successfully!');
    }
